@@ -1,0 +1,8 @@
+# ignore every pdf previews
+*.pdf
+# ignore every generate logs
+*.log
+# ignore every synctexs
+*.synctex
+# ignore every gz
+*.gz
