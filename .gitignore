@@ -6,3 +6,7 @@
 *.synctex
 # ignore every gz
 *.gz
+# aux
+*.aux
+# toc
+*.toc

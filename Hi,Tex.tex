@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,11pt]{book} %book,article,report,letter book(even,odd)...cool convenience
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -7,12 +7,13 @@
 \title{Tex from Anywhere}
 
 \begin{document}
-
 %\maketitle title author datetime
 
 \tableofcontents
 
-
+\mainmatter
+\part{chaos}
+\chapter[short]{it's short really}
 	\section{Hello Anywhere} u can write tex\\ from anywhere
 		\subsection{MikTex} MikTex on
 Windows
@@ -20,35 +21,32 @@ Windows
 				\paragraph{Editor}TeXworks
 					\subparagraph{2 windows}one for edit one for review
 		\subsection{Emacs}Emacs on Linux
-			\subsubsection{Emacs-LaTex}use Emacs-LaTex inside
-\newline
+			\subsubsection{Emacs-LaTex}
+\paragraph{x}
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f  \linebreak[3] Emacs-LaTex inside
+\\
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g H I J K L m \\
+% only undet book/reporte mode ...
+balabal \ldots{} %...
+\LaTeX2e
+next \\%\newline
+time\\
+\# \$ \% \^{O} \& \_ \{ \} \~{A}
+%\\[5pt]
+$\backslash$
+%\\[-5pt]
 
-\LaTeX2e \newline
-
-\# \$ \% \^{O} \& \_ \{ \}   \~{A}
-
- $\backslash$
 
 Today is \today
+%\begin{comment}
+%so, so
+%you think
+%you can tell
+%heaven from hell
+%\end{comment}
+%awlful... break pages
 
-\begin{comment}
-so, so
-you think
-you can tell
-heaven from hell
-\end{comment}
-A
-\\
-\\
-\\
-\\
-\\
-\\%awlful... break pages
-\\
-\\
-\\
-\\
-\\
+
 	\section{math}The Newton's second law is F=ma. %\\The Newton's second law is $F=ma$.  %\\just slice current line, and continue format-type?
 
 	\paragraph{in} The Newton's second law is $F=ma$. % $$F=ma$$
@@ -58,7 +56,7 @@ A
 	y\\
 	z
 
-	\paragraph{in}
+	\paragraph{ou}
 	Greek Letters $\eta$ and $\mu$.
 %empty line start new box format  %\\ in fact continue inbox format, just like line-break...
 	Fraction $\frac{a}{b}$
@@ -141,7 +139,31 @@ A
 	
 	\begin{tabular}{|r|}
 	•Q
-	\end{tabular}•
+	\end{tabular}
+
+\section{nasa-giss}
+Hypertext Help with LaTeX
+Line and Page Breaking
+
+
+The first thing LaTeX does when processing ordinary text is to translate your input file into a string of glyphs and spaces. To produce a printed document, this string must be broken into lines, and these lines must be broken into pages. In some environments, you do the line breaking yourself with the \\ command, but LaTeX usually does it for you.
+Commands for line and page breaks
+
+%    \hyphenation
+%
+%    \cleardoublepage
+%    \clearpage
+%
+%    \newline
+%    \linebreak
+%    \nolinebreak
+%    \newpage
+%    \pagebreak
+%    \nopagebreak
+
+For page numbering, see Counters
+To refer to a page number in the text, see \\pageref
+Return to LaTeX Table of Contents 
 
 \end{document}
 
