@@ -1,16 +1,16 @@
 SyncTeX Version:1
-Input:1:C:/Users\William\Desktop\shui\TexLa\LaTexNotShort.tex
-Input:2:C:\Users\William\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
-Input:3:C:\Users\William\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo
-Input:4:C:\Users\William\Desktop\shui\TexLa\LaTexNotShort.aux
-Input:5:C:\Users\William\Desktop\shui\TexLa\LaTexNotShort.toc
+Input:1:C:\Users\song2\Desktop\KIKI贵鬼\TexLa\LaTexNotShort.tex
+Input:2:D:\MiKTeX 2.9\tex\latex\base\article.cls
+Input:3:D:\MiKTeX 2.9\tex\latex\base\size11.clo
+Input:4:C:\Users\song2\Desktop\KIKI贵鬼\TexLa\LaTexNotShort.aux
+Input:5:C:\Users\song2\Desktop\KIKI贵鬼\TexLa\LaTexNotShort.toc
 Output:pdf
 Magnification:1000
 Unit:1
 X Offset:0
 Y Offset:0
 Content:
-!443
+!381
 {1
 [1,17:4736286,49353212:26607616,44616926,0
 [1,17:7750942,49353212:23592960,43437278,0
@@ -59,16 +59,17 @@ g1,9:21170427,13932631
 k1,9:31343903,13932631:10173476
 )
 (1,9:7750942,15541542:23592960,546132,152916
-k1,9:16707968,15541542:8957026
-h1,9:16707968,15541542:0,0,0
-x1,9:17210497,15541542
-x1,9:19734517,15541542
-g1,9:19991197,15541542
-x1,9:20590117,15541542
-g1,9:20846797,15541542
-x1,9:22386877,15541542
-g1,9:22386877,15541542
-k1,9:31343903,15541542:8957026
+k1,9:16253362,15541542:8502420
+h1,9:16253362,15541542:0,0,0
+x1,9:18734602,15541542
+x1,9:19141012,15541542
+x1,9:19804102,15541542
+g1,9:20060782,15541542
+x1,9:21044722,15541542
+g1,9:21301402,15541542
+x1,9:22841482,15541542
+g1,9:22841482,15541542
+k1,9:31343902,15541542:8502420
 )
 (1,11:7750942,18589031:23592960,647495,0
 (1,11:7750942,18589031:0,0,0
@@ -178,11 +179,11 @@ k1,17:31343902,49353212:11617075
 )
 ]
 ]
-!3989
+!4012
 }1
-Input:6:C:\Users\William\Desktop\shui\TexLa\LaTexNotShort.aux
-!71
+Input:6:C:\Users\song2\Desktop\KIKI贵鬼\TexLa\LaTexNotShort.aux
+!75
 Postamble:
-Count:126
+Count:131
 !25
 Post scriptum:
