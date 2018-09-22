@@ -3,18 +3,115 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+    %\usepackage{xeCJK}
+    %\setCJKmainfont{SimSun}
 \author{William Song}
 \title{Tex from Anywhere}
 
+    %\DeclareUnicodeCharacter
+
 \begin{document}
-%\maketitle title author datetime
+    %\maketitle title author datetime
 
 \tableofcontents
 
-\mainmatter
+\mainmatter 
+    % in WinEdt, compile pdf order: close pdfViewer -> PDFLatex -> PDFPreview |->
+    %                                                      ^------------------v
 \part{chaos}
-\chapter[short]{it's short really}
-	\section{Hello Anywhere} u can write tex\\ from anywhere
+\chapter[lshort]{it's short really}% how insert ordinary bracket in latex-command's option's bracket[lshort[3.20]]
+    %???\bigg\[ver3.20\bigg]
+    %???{a \brack b}
+\section{lshort Ch1}
+
+\paragraph{lshort 1.3.1}white/invisible spaces
+
+It does not matter whether you
+enter one or several         spaces
+after a word.
+
+An empty line starts a new paragraph.
+
+    %howto use chinese in latex command parameters or options like \chapter[特殊字符]{} or \paragraph{特殊字符}
+\paragraph{lshort 1.3.2}specail charaters
+\\  %需要注意的是，[()]不是特殊字符
+\# \$ \% \^{O} \& \_ \{ \} \~{A} \LaTeXe
+\\
+    %\\[5pt]
+$\backslash$
+    %\\[-5pt]
+
+\paragraph{lshort 1.3.3} \LaTeX{} command
+\\  %tex 吞吃空间距
+I read that Knuth divides the peopel working with \TeX{} into \TeX{}nicians and
+\TeX perts.
+\\
+Today is \today.
+\\  %比对  Martin Gardner PDF 出版物格式，了解英语国家排版设计基本惯例
+\\  %紧接 section第一段文字起始点顶左界；之后表意分为\\（断行顶左界）和空行(新段落首行空3字符)；以上均不同于 \paragraph{}（不带参数首行空2字符，带参数 参数段头顶左界）
+\\  %笨办法实现样子上的分段且顶左界，编译警告“2 bad boxes”
+Iou can \textsl{lean} on me! 
+    %\newline 
+    %???注释行不算做空行
+
+Iou can \textsl{lean} on me! 
+
+\paragraph{lshort 1.3.4}commends
+\\This is an % stupid
+    % Better: instructive
+example: Supercal%
+                ifragilist%
+        icexpialidocious
+        
+
+\paragraph{A}
+Iou can \textsl{lean} on me!  
+\\%[-5pt] %
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f  
+\linebreak[3] Emacs-LaTex inside
+\\
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g H I J K L m 
+\\
+% only undet book/reporte mode ...
+balabal \ldots{} %...
+\LaTeXe 
+\\
+next 
+\\%\newline
+time
+
+\begin{comment}
+so, so
+you think
+you can tell
+heaven from hell
+\end{comment}
+%awlful... break pages
+
+\subsection{nasa-giss}
+Hypertext Help with LaTeX
+Line and Page Breaking
+
+The first thing LaTeX does when processing ordinary text is to translate your input file into a string of glyphs and spaces. To produce a printed document, this string must be broken into lines, and these lines must be broken into pages. In some environments, you do the line breaking yourself with the \\ command, but LaTeX usually does it for you.
+Commands for line and page breaks
+%    \hyphenation
+%
+%    \cleardoublepage
+%    \clearpage
+%
+%    \newline
+%    \linebreak
+%    \nolinebreak
+%    \newpage
+%    \pagebreak
+%    \nopagebreak
+
+For page numbering, see Counters
+To refer to a page number in the text, see \newline pageref
+Return to LaTeX Table of Contents
+
+\section{Hello Anywhere} u can write tex\\ from anywhere
 		\subsection{MikTex} MikTex on
 Windows
 			\subsubsection{CTex}CTex integrate MikTex
@@ -22,37 +119,15 @@ Windows
 					\subparagraph{2 windows}one for edit one for review
 		\subsection{Emacs}Emacs on Linux
 			\subsubsection{Emacs-LaTex}
-\paragraph{x}
-use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f  \linebreak[3] Emacs-LaTex inside
-\\
-use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g H I J K L m \\
-% only undet book/reporte mode ...
-balabal \ldots{} %...
-\LaTeX2e
-next \\%\newline
-time\\
-\# \$ \% \^{O} \& \_ \{ \} \~{A}
-%\\[5pt]
-$\backslash$
-%\\[-5pt]
-
-
-Today is \today
-%\begin{comment}
-%so, so
-%you think
-%you can tell
-%heaven from hell
-%\end{comment}
-%awlful... break pages
-
 
 	\section{math}The Newton's second law is F=ma. %\\The Newton's second law is $F=ma$.  %\\just slice current line, and continue format-type?
 
 	\paragraph{in} The Newton's second law is $F=ma$. % $$F=ma$$
 
 	The Newton's second law is \[F=ma\].  %\\  %\\ can use independently to influence current line and next line's format
-	x\\
+
+	x
+
 	y\\
 	z
 
@@ -141,29 +216,7 @@ Today is \today
 	•Q
 	\end{tabular}
 
-\section{nasa-giss}
-Hypertext Help with LaTeX
-Line and Page Breaking
 
-
-The first thing LaTeX does when processing ordinary text is to translate your input file into a string of glyphs and spaces. To produce a printed document, this string must be broken into lines, and these lines must be broken into pages. In some environments, you do the line breaking yourself with the \\ command, but LaTeX usually does it for you.
-Commands for line and page breaks
-
-%    \hyphenation
-%
-%    \cleardoublepage
-%    \clearpage
-%
-%    \newline
-%    \linebreak
-%    \nolinebreak
-%    \newpage
-%    \pagebreak
-%    \nopagebreak
-
-For page numbering, see Counters
-To refer to a page number in the text, see \\pageref
-Return to LaTeX Table of Contents 
 
 \end{document}
 
