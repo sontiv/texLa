@@ -10,3 +10,6 @@
 *.aux
 # toc
 *.toc
+# dvi ps
+*.dvi
+*.ps

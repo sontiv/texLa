@@ -1,3 +1,5 @@
+%double-click "\cmd" will show U help.pdf
+%lshort CH1.4
 \documentclass[a4paper,11pt]{book} %book,article,report,letter book(even,odd)...cool convenience
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -10,13 +12,20 @@
 \title{Tex from Anywhere}
 
     %\DeclareUnicodeCharacter
-
+%^以上为导言区域
 \begin{document}
     %\maketitle title author datetime
 
+\begin{comment} %from classes.pdf in D:\MiKTeX 2.9\doc\latex\base
+                %from internet
+\newcommand{新命令}[参数数量][默认值]{定义内容}
+<*article|report|book>
+\newcommand\@ptsize{}
 \tableofcontents
+\setlength\columnsep{10\p@}
+\end{comment}
 
-\mainmatter 
+\mainmatter
     % in WinEdt, compile pdf order: close pdfViewer -> PDFLatex -> PDFPreview |->
     %                                                      ^------------------v
 \part{chaos}
@@ -51,33 +60,43 @@ Today is \today.
 \\  %比对  Martin Gardner PDF 出版物格式，了解英语国家排版设计基本惯例
 \\  %紧接 section第一段文字起始点顶左界；之后表意分为\\（断行顶左界）和空行(新段落首行空3字符)；以上均不同于 \paragraph{}（不带参数首行空2字符，带参数 参数段头顶左界）
 \\  %笨办法实现样子上的分段且顶左界，编译警告“2 bad boxes”
-Iou can \textsl{lean} on me! 
-    %\newline 
+Iou can \textsl{lean} on me!
+    %\newline
     %???注释行不算做空行
 
-Iou can \textsl{lean} on me! 
+Iou can \textsl{lean} on me!
 
-\paragraph{lshort 1.3.4}commends
+\paragraph{lshort 1.3.4}comments
 \\This is an % stupid
     % Better: instructive
 example: Supercal%
                 ifragilist%
         icexpialidocious
-        
+%usepackage{verbatim}
+%!!!can NOT use in math envs
+\begin{comment}
+This is another
+rather stupid,
+but helpful
+\end{comment}
+example for embedding
+comments in your document.
+
+……
 
 \paragraph{A}
-Iou can \textsl{lean} on me!  
+Iou can \textsl{lean} on me!
 \\%[-5pt] %
-use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f  
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f
 \linebreak[3] Emacs-LaTex inside
 \\
-use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g H I J K L m 
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g H I J K L m
 \\
 % only undet book/reporte mode ...
 balabal \ldots{} %...
-\LaTeXe 
+\LaTeXe
 \\
-next 
+next
 \\%\newline
 time
 
@@ -219,6 +238,9 @@ Windows
 
 
 \end{document}
+ignore me
+忽略本初 ;)
+
 
 
 
