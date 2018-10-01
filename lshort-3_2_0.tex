@@ -1,6 +1,6 @@
 %double-click "\cmd" will show U help.pdf
 %lshort CH1.4
-\documentclass[a4paper,11pt]{book} %book,article,report,letter book(even,odd)...cool convenience
+\documentclass[a4paper,11pt]{book} %book,article,report,letter,slide book(even,odd)...cool convenience
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -16,8 +16,9 @@
 \begin{document}
     %\maketitle title author datetime
 
-\begin{comment} %from classes.pdf in D:\MiKTeX 2.9\doc\latex\base
+\begin{comment} 
                 %from internet
+                %from classes.pdf in D:\MiKTeX 2.9\doc\latex\base
 \newcommand{新命令}[参数数量][默认值]{定义内容}
 <*article|report|book>
 \newcommand\@ptsize{}
@@ -82,12 +83,32 @@ but helpful
 example for embedding
 comments in your document.
 
+\paragraph{lshort 1.5}cli
+\\ref lshort-3-2-0(CH1.5).tex
+\begin{comment} % in Ali-ben debian OR use git-bash here(NOT use winEdt's cli)
+12711  xdvi lshort-3_2_0\(CH1.5\).dvi
+12712  dvips -Pcmz lshort-3_2_0\(CH1.5\).dvi -o foo.ps
+12713  echo $?
+\end{comment}
+
+\paragraph{lshort 1.6}bu4ju2 %???拼音注音
+% 文档类
+\\f(loat)l(eft)eqn
+\\l(eft)eqno(rder)
+% \usepackage{graphicx}
+\\ref qstart-jpg2eps.tex
+
+\paragraph{lshort 1.7}files.xxx
+sty -> D:\MiKTeX 2.9\tex\latex
+\\dtx -> Desktop\KIKI贵鬼\Math\TUG\latex-graphics.tds\source\latex\graphics
+\\ins -> https://www.ctan.org/pkg/graphicx :README.md
+
 ……
 
 \paragraph{A}
 Iou can \textsl{lean} on me!
 \\%[-5pt] %
-use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f
+use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g
 \linebreak[3] Emacs-LaTex inside
 \\
 use a b c d e f g H I J K L m 0 1 2 3 4 5 6 7 8 9 10 a b c d e f g H I J K L m

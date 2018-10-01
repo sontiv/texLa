@@ -1,11 +1,26 @@
-\documentclass{article}
-	\usepackage{graphicx}
+\documentclass{article}            %article
+	\usepackage{graphics}          %graphics
+    \usepackage{graphicx}
+    \usepackage{color}
+    \usepackage{verbatim}          %comment
 	\author{William Song}
 	\title{Tex from Anywhere}
 \begin{document}
+    \definecolor{my_light-blue}{rgb}{0.8,0.85,1}
 	\begin{center}
-	\includegraphics[width=7.00in,height=4.00in]{1,eps.jpg}
+	\includegraphics*[width=7.00in,height=4.00in]{1,eps.jpg}
+    %\includegraphics[72,72]{1,eps.jpg}
+    %pdfTex 不同于  Tex 不同于 LuaTex 不同于  XeTex
+    %dvips 得到的  ps 文件不能通过 gsview 预览
+    %{graphics}不能正确使用
 	\end{center}
+\begin{comment}
+%Desktop\KIKI贵鬼\Math\TUG\grfguide-graphicxIntro.doc (foxit pdf2word)
+graphics:  \includegraphics*[(llx,lly )][(urx,ury)]{(file)}
+graphicx:  \includegraphics*[(key val list )]{(file)}
+\end{comment}
+\textcolor{my_light-blue}{A...\(\alpha\)...$\Gamma$} 
+\\
 \end{document}
 
 
